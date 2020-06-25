@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNews</title>
+</head>
+<body>
+    <div class="estilo">
+     <style>
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(55deg,#0e21fa, #2738f3, #5fced6, #84E78E);
+  background-size: auto 100vh; 
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+   
+    font-size: 20px;
+  }
+}
+
+       .img1 {
+           position: fixed;
+           filter: opacity(94%);
+           margin-left: 70em;
+       }
+
+       header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+    .menu {
+  background-color: white;
+  position: fixed;
+  width: 15.5vw;
+  left: 1cm;
+  margin: 1cm;
+  top: 0;
+  z-index: 1;
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  font-size: 0.7cm;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 9px 20px;
+  transition: background-color 1s, color 1s;
+  text-align: center;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: rgb(22, 24, 133);
+  color: white;
+}
+
+a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+  display: inline-table;
+}
+
+.site-title {
+  font-size: 13em;
+  font-family: 'Gloria Hallelujah', cursive;
+  color:green;
+}
+
+.site-subtitle {
+ font-style: italic;
+ font-family: 'Press Start 2P', cursive;
+ line-height: 1.8em;
+ font-size: 9em;
+ color: blue;
+}
+
+    .inf {
+      margin: 3vw;
+    }
+
+    .ttinf {
+      color: whitesmoke;
+      font-size: 1cm;
+      font-family: 'Luckiest Guy', cursive;
+    }
+
+    p {
+      color: whitesmoke;
+      font-size: 0.7cm;
+      margin: 3vw;
+      margin-left:;
+      font-family: 'Pangolin', cursive;
+    }
+
+    .img2{
+      float: left;
+      margin-left: 3vw;
+      margin-top: 3vw;
+      width: 400px;
+      height: 250px;
+      margin-right: 4vw;
+      margin-bottom: 2vw;
+    }
+
+    .img2,
+    p {
+      display: block;
+    }
+
+    .img3 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      color: whitesmoke;
+      font-size: 0.7cm;
+      font-family: 'Luckiest Guy', cursive;
+    }
+
+    .bt2 {
+          margin-bottom: 4vw;
+      }
+
+      .ttct {
+          padding-top: 1.5em;
+          margin-left: 1.5em;
+          margin-bottom: 2.5em;
+          color: whitesmoke;
+          font-family: 'MuseoModerno', cursive;
+          font-size: 3em;
+      }
+
+      .contato {
+          background-color: rgb(65, 65, 65, 0.4);
+          padding-bottom: 6em;
+          border-top-left-radius: 2em;
+          border-top-right-radius: 2em;
+      }
+
+      .rdct {
+          margin-left: 10em;
+      }
+
+      .contato .icons {
+        text-align: center;
+      }
+
+      .contato a {
+       color: whitesmoke;
+       font-size: 4em;
+       transition: text-shadow 1s;
+       margin-left: 2vw;
+      } 
+
+      .contato a:active,
+      .contato a:hover  {
+        text-decoration: none;
+        text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+      }
+
+     </style>
+    </div>
+
+    <img src="img/Logo.png" alt="FNews" width="200" height="270" class="img1">
+
+    <header>
+        <nav class="menu">
+          <ul class="container">
+            <li><a href="#sobre" style="text-align: center;">T5's</a></li>
+          </ul>
+        </nav>
+        <div class="titulo">
+          <h1 class="site-title">F</h1><h2 class="site-subtitle">News</h2>
+          
+        </div>
+      </header>
+
+    <section class="inf">
+      <div class="inf2">
+        <h1 class="ttinf">Temporada 3 Capitulo 2 - Fortnite <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"></h1>
+        <img src="https://vignette.wikia.nocookie.net/fortnite/images/8/85/Chapter_2_Season_3_-_Key_Art_-_Fortnite.jpeg/revision/latest/scale-to-width-down/350?cb=20200617084157" class="img2">
+        <p class="txinf"> <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">As mudanças do capítulo 2 da terceira temporada de Fortnite são grandes. O mapa Fortnite é quase irreconhecível, há novos desafios, novas armas e muito mais. O experimento fracassado do Device, no final do evento da última temporada, inundou o mapa, deixando metade dele debaixo d'água e, como resultado, existem novos pontos de interesse, banheiras de hidromassagem, tubarões, Aquaman e muito mais.</p>
+        <p> <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">Capítulo 2: Temporada 3, também conhecida como Temporada 13 nos arquivos do jogo, com o slogan "Splashdown!", É a décima terceira temporada de Fortnite: Battle Royale, que começou em 17 de junho de 2020 e terminará em 27 de agosto de 2020 Anteriormente, a data de início seria 30 de abril de 2020, mas foi adiada várias vezes para 17 de junho de 2020. O tema gira em torno de água e esportes aquáticos.</p>
+      </div>
+        <h1 class="ttinf">Aqui estão 8 novidades da Temporada 3</h1>
+
+        <h2>1. O novo mapa do Fortnite está inundado</h2>
+        <img src="https://cdn.mos.cms.futurecdn.net/AzyHDArHDL5UrWjbFwUzH8-650-80.jpg.webp" class="img2">
+        <p>A nova temporada de Fortnite está finalmente aqui - e trouxe uma inundação. Hoje, a Epic Games lançou a terceira temporada atrasada de Fortnite: Capítulo 2, após um evento maciço no início da semana que viu a ilha battle royale do jogo cercada por uma parede de água. Apropriadamente, a nova temporada submergiu grandes áreas da ilha, criando um foco maior nos elementos da jogabilidade aquática. Isso inclui uma nova área da cidade flutuante no estilo Waterworld e a capacidade de esquiar - enquanto puxado por um tubarão.
+
+          A maior mudança é, obviamente, o mapa. A parte oeste da ilha agora está quase submersa, eliminando locais como Slurpy Swamp e Weeping Woods. Enquanto isso, a área anteriormente destruída da Agência agora parece ser algum tipo de base fortemente fortificada. O novo mapa torna os barcos do jogo muito mais viáveis, enquanto a nova temporada também introduz novas opções de mobilidade, incluindo o esqui aquático acima mencionado; você poderá se agarrar a um tubarão, naturalmente, pescando. Outras grandes adições incluem novos inimigos de NPC chamados Marauders.</p>
+        
+        <h2>2. Existe um novo passe de batalha com novas recompensas.</h2>
+        <p>With every season comes a new battlepass and this one is no different. With season 3 being water themed it’s not really a surprise that Aquaman has is now part of the Fortnite universe. Like with Deadpool last season he comes with his own set of challenges which will unlock over time and completing them earns you different styles. The rest of the battle pass is suitably water themed as well containing gliders, contrails and emoticons. Oh and Kit. Kit is our new best friend. </p>
+        <img src="https://cdn.mos.cms.futurecdn.net/6jFZ9LwcnQapsvB3WuNNoQ-650-80.png.webp" width="700" height="400" class="img3">
+
+        <h2>3. Tubarões e banheiras de hidromassagem são uma nova maneira de viajar pelo mapa aquático</h2>
+        <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/86emwetqiwwy50yn_1592455377.jpeg?tr=w-812,h-464" class="img2">
+        <p>Dada toda a água que está ao redor, também não é uma surpresa ver a chegada de tubarões na ilha de Fortnite. Essas bestas gigantes vagam pelas águas, portanto, não gaste muito tempo dando um mergulho casual, embora você possa se prender a uma vara de pescar e usá-las para arrastá-lo em esquis aquáticos. Quando não estão agindo como carros com barbatanas, eles podem destruir estruturas e até chegar a terra, então fique de olho em pequenas ilhas. Eles podem ser mortos e soltarão uma arma se você conseguir eliminar uma. Também se juntam aos tubarões na água, as banheiras de hidromassagem. Eles podem ser encontrados em toda a ilha e nadar sobre um deles o lançará no ar e permitirá que você reimplante seus planadores. Pense neles como esta estação gêiseres do capítulo 1.</p>
+
+        <h2>4. Marotos são novos NPCs que percorrem o mapa e largam equipamentos de nível superior quando derrotados</h2>
+        <img class="img2" src="https://cdn.mos.cms.futurecdn.net/a3Kp64rAwzqx8azeQBEjjd-650-80.jpg.webp">
+        <p>Os saqueadores funcionam muito como os capangas da última temporada, mas são muito mais móveis, se teletransportando pelo mapa para causar problemas ao invés de patrulhar bases. Como os capangas, que ainda estão por aí patrulhando as bases não afundaram, eles jogam pilhagem útil. Derrube o Heavy Marauder, por exemplo, e você obterá um RPG épico. No entanto, eles são rebatedores muito pesados e aparecem em pequenos grupos sem aviso, portanto, tenha cuidado - se eles aparecerem enquanto você está enfrentando um jogador, as coisas podem ficar muito complicadas rapidamente. </p>
+
+        <h2>5. Existem novos cofres para entrar e chefes para derrotar</h2>
+        <p>Agora que a ilha passou por uma reforma, alguns dos locais dos patrões e dos cofres da última temporada foram substituídos. Então, se você quiser colocar as mãos nessas armas míticas na terceira temporada, precisará visitar esses locais. A Autoridade - pode ser encontrada no centro do mapa onde a agência estava na última temporada e é onde você encontra Jules. Ao eliminar Jules, você obterá a pistola planadora de Jules - um grappler infinito, a pistola de tambor de Jules e o cartão-chave da Autoridade, que permitirá acesso ao cofre.
+          Catty Corner - A substituição da antiga fábrica de caixas é Catty Corner no G6. Elimine o Kit aqui e pegue a espingarda de carga de Kit, o lançador de granadas de ondas de choque de Kit e o cartão-chave de canto desagradável do cofre.
+          Em Fortilla, você encontrará isso nas B6 e 7. É uma área enorme e é onde você encontrará o oceano. Elimite-o e você receberá o fuzil de assalto Ocean, o jarro sem fundo e o cartão-chave do cofre.</p>
+        <img class="img3" src="https://cdn.mos.cms.futurecdn.net/oZgVBbsTasJMPuqyz2GSuG-650-80.jpg.webp" width="700" height="400">
+
+        <h2>6. Existem novas armas para brincar e coisas entrando e saindo do cofre</h2>
+        <img class="img2" src="https://cdn.mos.cms.futurecdn.net/5ttpYACv3oA7kLdmVKbY3A-650-80.jpg.webp">
+        <p>A grande mudança na terceira temporada é a Charge Shotgun, que substitui a agora Vaulted Pump. O P90 também foi desativado para oferecer uma opção alternativa de pulverização a curta distância e opção de oração se você não cavar a carga. Há uma nova pistola Flare Gun e Firefly Jar para adicionar um caos à chama no novo mapa aquoso. Enquanto espingardas de caça e espingardas de atirador de elite retornam do túmulo falho para lhe dar algumas opções de alcance através das ondas. Existem algumas novas armas míticas, também na forma do rifle de assalto Burst Ocean, da pistola de planador de Jule, do lançador de granadas Kit Shockwave e da espingarda de carga de Kit e do jarro de chumbo sem fundo do Ocean, que reabastece após uma recarga para que você nunca morra de sede. Literalmente.</p>
+
+        <h2>7. Carros e caminhões estão a caminho</h2>
+        <img class="img2" src="https://cdn.mos.cms.futurecdn.net/Wikni5fdEJ88GdCRZn6DzT-650-80.jpg.webp">
+        <p>Veículos terrestres aparecem bastante no trailer da terceira temporada, mas, no momento, eles não estão no jogo. A narração do trailer do passe de batalha explica que "até o final da temporada, haverá novas maneiras de se locomover", enquanto exibem dois veículos - um carro esportivo e uma caminhonete - em uma perseguição em alta velocidade. No momento, porém, metade do mapa está inundada; portanto, a menos que sejam anfíbios, eles não seriam muito úteis. É uma história semelhante aos helicópteros da temporada passada, que estavam no trailer, mas demorou um pouco para aparecer no jogo principal; mantenha os olhos abertos e, sem dúvida, estará ao volante em breve.</p>
+
+        <h2>8. Agora você pode fazer seu próprio planador com o Build-a-brella</h2>
+        <p>Nesta temporada, tudo se resume a tornar o seu planador com a nova opção Build-a-brella. Assim como Maya na segunda temporada, há um conjunto de opções para desbloquear à medida que a terceira temporada avança, permitindo que você crie seu próprio guarda-chuva pessoal. Além de noções básicas como cor, você poderá alterar todos os aspectos do design do guarda-chuva, incluindo a cor do topo, do eixo, do dossel, da tampa inferior e da trilha. Os elementos físicos são desbloqueados à medida que você aumenta o nível do seu passe de batalha e terá que atingir 95 se quiser que tudo seja desbloqueado. Enquanto as cores são desbloqueadas através de desafios que aparecerão ao longo do tempo.</p>
+        <img class="img3" src="https://cdn.mos.cms.futurecdn.net/VUCssVYguwgTHjp2iSww4i-650-80.jpg.webp">
+        </section>
+
+        <section class="contato">
+          <div class="ttct">
+              <h1>Contacto</h1>
+          </div>
+          <div class="rdct">
+              <a href="https://www.instagram.com/tsantos2007/?hl=pt" class="rdct">Instagram</a>
+          </div>
+        </section>
+
+    
+</body>
+</html>
